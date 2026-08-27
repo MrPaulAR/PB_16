@@ -3,10 +3,19 @@
 
 const uint16_t numPixels = 300;
 
-ws2812b<B,3> myLeds1;
-ws2812b<B,0> myLeds2;
-ws2812b<B,1> myLeds3;
-ws2812b<B,2> myLeds4;
+avrBitbangLedStrip<WS2812B_1H_CY, WS2812B_1L_CY, WS2812B_0H_CY, WS2812B_0L_CY,
+                    WS2812B_MS_REFRESH, B, 3, A, 0, RGB, ONE_PORT_BITBANG> myLeds1;  // NeoPixel data on PB3
+avrBitbangLedStrip<WS2812B_1H_CY, WS2812B_1L_CY, WS2812B_0H_CY, WS2812B_0L_CY,
+                    WS2812B_MS_REFRESH, B, 0, A, 0, RGB, ONE_PORT_BITBANG> myLeds2;  // NeoPixel data on PB0
+avrBitbangLedStrip<WS2812B_1H_CY, WS2812B_1L_CY, WS2812B_0H_CY, WS2812B_0L_CY,
+                    WS2812B_MS_REFRESH, B, 1, A, 0, RGB, ONE_PORT_BITBANG> myLeds3;  // NeoPixel data on PB1
+avrBitbangLedStrip<WS2812B_1H_CY, WS2812B_1L_CY, WS2812B_0H_CY, WS2812B_0L_CY,
+                    WS2812B_MS_REFRESH, B, 2, A, 0, RGB, ONE_PORT_BITBANG> myLeds4;  // NeoPixel data on PB2
+
+//ws2812b<B,3> myLeds1;
+//ws2812b<B,0> myLeds2;
+//ws2812b<B,1> myLeds3;
+//ws2812b<B,2> myLeds4;
 //ws2812b8s<B,0,7> strip_split8;//maybe?
 
 volatile bool test_en = false;

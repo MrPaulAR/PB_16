@@ -2,4 +2,5 @@
   (version 7)
   (lib (name "Receiver_Out-rescue")(type "Legacy")(uri "${KIPRJMOD}/Receiver_Out-rescue.lib")(options "")(descr ""))
   (lib (name "Scotts")(type "KiCad")(uri "${KIPRJMOD}/../libraries/Scotts/Scotts.kicad_sym")(options "")(descr ""))
+  (lib (name "1864299")(type "KiCad")(uri "${KIPRJMOD}/../libraries/1864299/1864299.kicad_sym")(options "")(descr ""))
 )

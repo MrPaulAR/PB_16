@@ -3,4 +3,5 @@
   (lib (name "Scotts")(type "KiCad")(uri "${KIPRJMOD}/../libraries/Scotts/Scotts.pretty")(options "")(descr ""))
   (lib (name "Keystone_Fuse")(type "KiCad")(uri "${KIPRJMOD}/../libraries/Scotts/Scotts.pretty")(options "")(descr ""))
   (lib (name "Barrier_Blocks")(type "KiCad")(uri "${KIPRJMOD}/../libraries/Barrier_Blocks/Barrier_Blocks.pretty")(options "")(descr ""))
+  (lib (name "1864299")(type "KiCad")(uri "${KIPRJMOD}/../libraries/1864299")(options "")(descr ""))
 )
